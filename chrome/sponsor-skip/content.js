@@ -16,11 +16,16 @@ skipButton.onclick = record;
 function stopRecord(){
     endTime = video.currentTime;
     console.log(endTime)
+    skipButton.textContent = "Start Record"
+    skipButton.classList.remove("pulse")
     skipButton.onclick = record;
+    //TODO POST REQUEST TO SERVER
 }
 
 function record(){
     startTime = video.currentTime;
+    skipButton.textContent = "Stop Recording"
+    skipButton.classList.add("pulse")
     console.log(startTime);
     skipButton.onclick = stopRecord;
 }

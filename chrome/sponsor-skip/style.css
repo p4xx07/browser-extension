@@ -3,7 +3,7 @@
     color: white;
     padding: 11px;
     margin: 6px 10px;
-    background: #4f4fff;
+    background: rgb(79, 79, 255);
     border-radius: 2px;
     font-weight: 700;
     font-size: 13px;
@@ -11,4 +11,22 @@
     display: flex;
     align-items: center;
     cursor: pointer;;
+}
+
+.pulse{
+    animation: pulse-animation infinite 1s;
+}
+
+@keyframes pulse-animation {
+	0% {
+		box-shadow: 0 0 0 0 rgb(79, 79, 255, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgb(79, 79, 255, 0.2);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgb(79, 79, 255, 0);
+	}
 }
