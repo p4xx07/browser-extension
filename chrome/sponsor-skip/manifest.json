@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Sponsor Skip",
+    "version": "0.1",
+    "content_scripts": [
+      {
+        "matches": [
+           "https://*.youtube.com/*"
+        ],
+        "css": [ "style.css" ],
+        "js": ["content.js"]
+      }
+    ]
+  }

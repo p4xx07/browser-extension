@@ -1,0 +1,14 @@
+#skip-sponsor-button{
+    height: 15px;
+    color: white;
+    padding: 11px;
+    margin: 6px 10px;
+    background: #4f4fff;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    cursor: pointer;;
+}
