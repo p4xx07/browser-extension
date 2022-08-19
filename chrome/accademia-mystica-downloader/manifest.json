@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Accademia Downloader",
+    "description": "Download vods",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "rocket.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs",
+      "*www.accademiamystica.it*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.accademiamystica.it/*"],
+        "run_at": "document_start",
+        "js": ["contentscript.js", "inject.js"]
+      }
+    ],
+    "web_accessible_resources": ["injected.js"]
+  }
